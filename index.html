@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIMNA GROUP - Homes & Agro Solutions</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="logo.png" alt="SIMNA GROUP Logo" class="main-logo">
+            <h1>SIMNA GROUP</h1>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="#about"><i class="fas fa-info-circle"></i> About</a></li>
+            <li><a href="#homes"><i class="fas fa-city"></i> Simna Homes</a></li>
+            <li><a href="#properties"><i class="fas fa-building"></i> Properties</a></li>
+            <li><a href="#agro"><i class="fas fa-leaf"></i> Simna Agro</a></li>
+            <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1><i class="fas fa-gem"></i> Welcome to SIMNA GROUP <i class="fas fa-leaf"></i></h1>
+            <p>Building Dreams, Growing Futures</p>
+            <div class="hero-buttons">
+                <a href="#properties" class="cta-button">View Properties</a>
+                <a href="#contact" class="cta-button secondary">Get in Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about enhanced-about">
+        <div class="container">
+            <div class="about-card">
+                <div class="about-info">
+                    <h2><i class="fas fa-users about-title-icon"></i> About SIMNA GROUP</h2>
+                    <p class="about-prompt">At SIMNA GROUP, we are passionate about transforming lives and landscapes. Our mission is to deliver excellence in real estate and agriculture, creating sustainable value for our clients, partners, and communities.</p>
+                </div>
+                <div class="about-quests-list">
+                    <ul class="about-quests">
+                        <li><i class="fas fa-check-circle"></i> How can we help you build your dream home or business?</li>
+                        <li><i class="fas fa-check-circle"></i> What innovative solutions can we offer for your agricultural needs?</li>
+                        <li><i class="fas fa-check-circle"></i> How do we ensure quality, trust, and sustainability in every project?</li>
+                        <li><i class="fas fa-check-circle"></i> Why do clients choose SIMNA GROUP for their most important investments?</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Simna Homes Section -->
+    <section id="homes" class="homes">
+        <div class="container">
+            <div class="department-header">
+                <h2 class="department-title">Simna Homes Developer</h2>
+                <p class="department-subtitle">Building Your Dream Spaces</p>
+            </div>
+            <div class="department-cards">
+                <div class="department-card">
+                    <i class="fas fa-home"></i>
+                    <h3>Residential Projects</h3>
+                    <p>Luxury living spaces designed for modern families</p>
+                </div>
+                <div class="department-card">
+                    <i class="fas fa-building"></i>
+                    <h3>Commercial Properties</h3>
+                    <p>Prime commercial spaces for your business</p>
+                </div>
+                <div class="department-card">
+                    <i class="fas fa-drafting-compass"></i>
+                    <h3>Custom Designs</h3>
+                    <p>Tailored architectural solutions for your needs</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Properties Section -->
+    <section id="properties" class="properties">
+        <div class="container">
+            <h2>Featured Properties</h2>
+            <div class="property-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="residential">Residential</button>
+                <button class="filter-btn" data-filter="commercial">Commercial</button>
+            </div>
+            <div class="properties-grid">
+                <div class="property-card" data-category="residential">
+                    <div class="property-image">
+                        <img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Luxury Villa">
+                        <div class="property-tag">For Sale</div>
+                    </div>
+                    <div class="property-info">
+                        <h3>Luxury Villa</h3>
+                        <p class="property-location"><i class="fas fa-map-marker-alt"></i> Prime Location</p>
+                        <p class="property-price">$850,000</p>
+                        <div class="property-features">
+                            <span><i class="fas fa-bed"></i> 4 Beds</span>
+                            <span><i class="fas fa-bath"></i> 3 Baths</span>
+                            <span><i class="fas fa-ruler-combined"></i> 2500 sqft</span>
+                        </div>
+                        <button class="property-btn">View Details</button>
+                    </div>
+                </div>
+                <div class="property-card" data-category="commercial">
+                    <div class="property-image">
+                        <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Office Space">
+                        <div class="property-tag">For Rent</div>
+                    </div>
+                    <div class="property-info">
+                        <h3>Modern Office Space</h3>
+                        <p class="property-location"><i class="fas fa-map-marker-alt"></i> Business District</p>
+                        <p class="property-price">$5,000/month</p>
+                        <div class="property-features">
+                            <span><i class="fas fa-building"></i> 5 Floors</span>
+                            <span><i class="fas fa-parking"></i> 50 Parking</span>
+                            <span><i class="fas fa-ruler-combined"></i> 10000 sqft</span>
+                        </div>
+                        <button class="property-btn">View Details</button>
+                    </div>
+                </div>
+                <div class="property-card" data-category="residential">
+                    <div class="property-image">
+                        <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Modern Apartment">
+                        <div class="property-tag">For Sale</div>
+                    </div>
+                    <div class="property-info">
+                        <h3>Modern Apartment</h3>
+                        <p class="property-location"><i class="fas fa-map-marker-alt"></i> City Center</p>
+                        <p class="property-price">$450,000</p>
+                        <div class="property-features">
+                            <span><i class="fas fa-bed"></i> 2 Beds</span>
+                            <span><i class="fas fa-bath"></i> 2 Baths</span>
+                            <span><i class="fas fa-ruler-combined"></i> 1200 sqft</span>
+                        </div>
+                        <button class="property-btn">View Details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Simna Agro Section -->
+    <section id="agro" class="agro">
+        <div class="container">
+            <div class="department-header">
+                <h2 class="department-title">Simna Agro</h2>
+                <p class="department-subtitle">Growing Sustainable Futures</p>
+            </div>
+            <div class="department-cards">
+                <div class="department-card">
+                    <i class="fas fa-seedling"></i>
+                    <h3>Agricultural Solutions</h3>
+                    <p>Modern farming techniques and equipment</p>
+                </div>
+                <div class="department-card">
+                    <i class="fas fa-tractor"></i>
+                    <h3>Farm Equipment</h3>
+                    <p>High-quality agricultural machinery</p>
+                </div>
+                <div class="department-card">
+                    <i class="fas fa-leaf"></i>
+                    <h3>Organic Farming</h3>
+                    <p>Sustainable and eco-friendly practices</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact enhanced-contact">
+        <div class="container">
+            <div class="contact-card">
+                <div class="contact-info">
+                    <h2>Contact Us</h2>
+                    <p>We'd love to hear from you! Reach out for any queries or business opportunities.</p>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> +1234567890</li>
+                        <li><i class="fas fa-envelope"></i> info@simnagroup.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Your Address Here</li>
+                    </ul>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="input-group">
+                            <i class="fas fa-user"></i>
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="input-group">
+                            <i class="fas fa-envelope"></i>
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="input-group">
+                            <i class="fas fa-phone"></i>
+                            <input type="tel" placeholder="Your Phone">
+                        </div>
+                        <div class="input-group">
+                            <i class="fas fa-building"></i>
+                            <select required>
+                                <option value="">Select Department</option>
+                                <option value="homes">Simna Homes</option>
+                                <option value="agro">Simna Agro</option>
+                            </select>
+                        </div>
+                        <div class="input-group">
+                            <i class="fas fa-comment"></i>
+                            <textarea placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="logo.png" alt="SIMNA GROUP Logo" class="footer-logo-img">
+                        <h3>SIMNA GROUP</h3>
+                    </div>
+                    <p>Building Dreams, Growing Futures</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#homes">Simna Homes</a></li>
+                        <li><a href="#properties">Properties</a></li>
+                        <li><a href="#agro">Simna Agro</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p><i class="fas fa-phone"></i> +1234567890</p>
+                    <p><i class="fas fa-envelope"></i> info@simnagroup.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Your Address Here</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 SIMNA GROUP. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
