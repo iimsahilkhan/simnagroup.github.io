@@ -305,7 +305,7 @@ body {
 }
 
 .agro::before {
-    background-image: url('https://images.unsplash.com/photo-1500382017468-9049fed747ef?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+    background-image: url('background.png');
 }
 
 .department-header {
@@ -350,7 +350,7 @@ body {
 }
 
 .agro {
-    background: linear-gradient(135deg, var(--agro-theme), #1e8449);
+    background: linear-gradient(135deg, var(--agro-theme), #909592bb);
     color: var(--white);
 }
 
@@ -384,6 +384,81 @@ body {
 
 .homes .service-card:hover i, .agro .service-card:hover i {
     transform: scale(1.2);
+}
+
+/****************************
+  PRODUCTS SECTION
+*****************************/
+.products-section {
+    background: linear-gradient(120deg, #303435f9 0%, #0f2027cc 100%),
+        url('https://images.unsplash.com/photo-1500382017468-9049fed747ef?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80') center/cover no-repeat;
+}
+.product-grid {
+    display: flex;
+    gap: 2.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+.product-card {
+    background: #1e8449;
+    border-radius: 18px;
+    box-shadow: 0 4px 32px #000a;
+    overflow: hidden;
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+    border: 2px solid #ffe08233;
+}
+.product-card:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 8px 48px rgba(166, 164, 164, 0.8);
+    border-color: #ffe082;
+}
+.product-card img {
+    width: 100%;
+    height: 260px;
+    object-fit: contain;
+    background: #90c586;
+    border-bottom: 2px solid #ffe082;
+}
+.product-card h3 {
+    font-family: 'Montserrat', Arial Black, Arial, sans-serif;
+    color: #ffe082;
+    font-size: 1.3rem;
+    margin: 1.2rem 0 0.5rem 0;
+    letter-spacing: 1px;
+    text-shadow: 0 1px 4px #000a;
+}
+.product-card p {
+    color: #fffbe7;
+    font-size: 1.08rem;
+    margin-bottom: 1.2rem;
+    text-align: center;
+    text-shadow: 0 1px 4px #000a;
+}
+.order-btn {
+    margin-bottom: 1.5rem;
+    padding: 0.8rem 2rem;
+    background: #155c1cbb;
+    color: #121312;
+    font-family: 'Montserrat', Arial Black, Arial, sans-serif;
+    font-weight: 900;
+    font-size: 1.1rem;
+    border-radius: 8px;
+    border: none;
+    letter-spacing: 1px;
+    box-shadow: 0 2px 8px #0005;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s, transform 0.2s;
+    text-transform: uppercase;
+}
+.order-btn:hover {
+    background: #fffbe7;
+    color: #181818;
+    transform: scale(1.05);
 }
 
 /* Add animation for department titles */
